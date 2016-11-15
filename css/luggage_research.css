@@ -1,6 +1,41 @@
 /* Formatting Research Views */
 
-.view-display-id-attachment_people .views-row {
+.view-research .view-display-id-attachment_people .views-row {
     float: left;
     margin-right: 2em;
+}
+
+.view-research  .view-content {
+    padding-left: 3em;
+}
+
+.view-research.view-display-id-attachment_description .view-content {
+    padding-left: 0;
+}
+
+.view-research.view-display-id-page_project .views-field-title {
+    margin-top: 2em;
+}
+
+.view-research.view-display-id-page_project .views-row-first .views-field-title {
+    margin-top: inherit;
+}
+
+.view-research.view-display-id-page_project .views-field-title h4 {
+    font-size: larger;
+}
+
+.view-research.view-display-id-page_project .views-field-field-project-people {
+    margin-bottom: 1em;
+    margin-top: -8px;
+}
+
+.view-research.view-display-id-page_project .views-field-field-project-image {
+    float: left;
+    margin-right: 1em;
+}
+
+/* Learn more about... link */
+.view-research-terms .views-field-nothing {
+    float: right;
 }

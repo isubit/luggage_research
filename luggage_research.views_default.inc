@@ -160,6 +160,30 @@ function luggage_research_views_default_views() {
     'link' => 1,
   );
   $handler->display->display_options['fields']['field_project_people']['delta_offset'] = '0';
+  /* Field: Content: Images */
+  $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['label'] = '';
+  $handler->display->display_options['fields']['field_project_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_project_image']['settings'] = array(
+    'image_style' => 'scale200wide',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_project_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_project_image']['delta_offset'] = '0';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -343,6 +367,17 @@ function luggage_research_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Learn more about [name_1]';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = 'research-areas/[name_1]';
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Taxonomy term: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
