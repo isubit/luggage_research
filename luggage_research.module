@@ -5,3 +5,13 @@
  */
 
 include_once 'luggage_research.features.inc';
+
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function luggage_research_views_pre_render(&$view) {
+  if($view->name == 'research') {
+    drupal_add_css(drupal_get_path('module', 'luggage_research') . '/css/luggage_research.css');
+  }
+}
