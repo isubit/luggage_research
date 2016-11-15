@@ -167,7 +167,7 @@ function luggage_research_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
-  $handler->display->display_options['path'] = 'research/%';
+  $handler->display->display_options['path'] = 'research-areas/%';
 
   /* Display: Attachment People */
   $handler = $view->new_display('attachment', 'Attachment People', 'attachment_people');
@@ -325,7 +325,7 @@ function luggage_research_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['text'] = '[name]';
   $handler->display->display_options['fields']['name']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['name']['alter']['path'] = 'research/[name]';
+  $handler->display->display_options['fields']['name']['alter']['path'] = 'research-areas/[name]';
   $handler->display->display_options['fields']['name']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['name']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
@@ -345,7 +345,7 @@ function luggage_research_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Learn more about [name_1]';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['path'] = 'research/[name]';
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = 'research-areas/[name]';
   $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -369,7 +369,7 @@ function luggage_research_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'research';
+  $handler->display->display_options['path'] = 'research-areas';
   $export['research_terms'] = $view;
 
   return $export;
