@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_research feature.
+ */
+
+include_once 'luggage_research.features.inc';
