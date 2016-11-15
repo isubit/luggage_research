@@ -21,6 +21,7 @@ features[field_instance][] = node-people-field_people_projects
 features[field_instance][] = node-project-field_people_expertise
 features[field_instance][] = node-project-field_project_people
 features[field_instance][] = taxonomy_term-expertise-field_expertise_images
+features[image][] = scale200wide
 features[views_view][] = research
 features[views_view][] = research_terms
 features_exclude[dependencies][ctools] = ctools
