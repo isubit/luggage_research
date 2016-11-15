@@ -10,12 +10,12 @@
 function luggage_research_default_cer() {
   $items = array();
   $items['node:project:field_project_people*node:people:field_people_projects'] = entity_import('cer', '{
-    "identifier" : "node:project:field_project_people*node:people:field_people_projects",
     "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
     "cer_enabled" : { "und" : [ { "value" : "1" } ] },
-    "cer_weight" : { "und" : [ { "value" : "0" } ] },
     "cer_left" : { "und" : [ { "path" : "node:project:field_project_people" } ] },
     "cer_right" : { "und" : [ { "path" : "node:people:field_people_projects" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "identifier" : "node:project:field_project_people*node:people:field_people_projects",
     "rdf_mapping" : []
   }');
   return $items;
