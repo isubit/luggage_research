@@ -39,7 +39,7 @@
     list-style-position: inside;
 }
 
-/* Learn more about... link */
-.view-research-terms .views-field-nothing {
-    float: right;
+
+.view-research-terms.view-display-id-page .views-row {
+    margin-bottom: 2em;
 }
