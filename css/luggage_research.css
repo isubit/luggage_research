@@ -35,6 +35,10 @@
     margin-right: 1em;
 }
 
+.view-research.view-display-id-page_project .views-field-body li {
+    list-style-position: inside;
+}
+
 /* Learn more about... link */
 .view-research-terms .views-field-nothing {
     float: right;
