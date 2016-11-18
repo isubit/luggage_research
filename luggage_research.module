@@ -14,4 +14,11 @@ function luggage_research_views_pre_render(&$view) {
   if($view->name == 'research' || $view->name == 'research_terms') {
     drupal_add_css(drupal_get_path('module', 'luggage_research') . '/css/luggage_research.css');
   }
+
+  if($view->name == 'research' && $view->current_display == 'page_project') {
+    // Override the project page header to display the term description.
+    $term = taxonomy_term_load($view->argument['tid']->argument);
+    $view->header['area']->options['content'] = '<div class="clearfix">' . check_markup($term->description, $term->format) . '</div>';
+    $view->header['area']->options['content'] .= '<br /><h3>Projects</h3>';
+  }
 }
